@@ -1,3 +1,3 @@
 # Career Counselling Committee, CSE, DIEMS
-
-- **Delivered on**: Dec 2nd, 2022
+**Title:** Journey & Learnings
+- **Delivered on:** 2nd December, 2022
