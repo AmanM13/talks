@@ -38,10 +38,37 @@ Docker Login
 ```
 docker login
 ```
+Create a repo in your docker hub account
 Push Image to Docker Hub
 ```
 docker tag your_image_name:tag username/repository_name:tag
 ```
 ```
 docker push username/repository_name:tag
+```
+Make Changes to the Running Container
+```
+docker exec -it container_id /bin/sh
+```
+```
+echo "Hello from FOSS Bangalore! We are learning Docker" >> /dev/stdout
+```
+```
+exit
+```
+Commit Changes to Create a New Image
+```
+docker commit container_id your_image_name:new_tag
+```
+Tag the New Image
+```
+docker tag your_image_name:new_tag username/repository_name:new_tag
+```
+Push the New Image to Docker Hub
+```
+docker push username/repository_name:new_tag
+```
+Run a Container Based on the Updated Image
+```
+docker run --name new_container_name username/repository_name:new_tag
 ```
