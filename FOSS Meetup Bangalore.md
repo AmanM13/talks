@@ -24,7 +24,7 @@ FROM alpine:latest
 ENV MESSAGE "Hello from FOSS Bangalore!"
 
 # Print the message when the container starts
-CMD echo $MESSAGE
+CMD echo $MESSAGE && tail -f /dev/null
 ```
 Build the Image
 ```
